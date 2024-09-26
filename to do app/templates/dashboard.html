@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dashboard.css') }}">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Dashboard</h2>
+    <ul>
+        {% for task in tasks %}
+        <li>
+            <strong>{{ task[2] }}</strong> - {{ task[3] }}
+            <a href="{{ url_for('update_task', id=task.id) }}">Update</a>
+            <a href="{{ url_for('delete_task', id=task.id) }}">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('add_task') }}">Add Task</a>
+    <br><br>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
+

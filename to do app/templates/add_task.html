@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/add_task.css') }}">
+    <title>Add Task</title>
+</head>
+<body>
+    <h2>Add New Task</h2>
+    <form method="POST" action="{{ url_for('add_task') }}">
+        <label for="title">Task Title:</label>
+        <input type="text" name="title" required>
+        <label for="description">Description:</label>
+        <textarea name="description" required></textarea>
+        <button type="submit">Add Task</button>
+    </form>
+</body>
+</html>

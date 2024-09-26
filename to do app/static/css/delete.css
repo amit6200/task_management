@@ -1,0 +1,125 @@
+/* General styles for the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #fff5c3, #f7edc6, #fff3d1); /* Soft yellow gradient */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login container styles */
+.login-container {
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Logo and Title */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #f54464; /* Redish tone for the text */
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+h2 {
+    color: #999;
+    margin-bottom: 30px;
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border: 2px solid #f0f0f0;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #f54464; /* Match button color */
+    outline: none;
+}
+
+/* Sign Up Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: #f54464; /* Bright red/pink button */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e33c58; /* Darken on hover */
+}
+
+/* Optional login methods (like Google) */
+.optional-login {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.optional-login a {
+    color: #4285f4; /* Google blue */
+    text-decoration: none;
+}
+
+.optional-login a:hover {
+    text-decoration: underline;
+}
+
+/* Styling the text links */
+a {
+    display: block;
+    margin-top: 15px;
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+a:hover {
+    color: #f54464;
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+        padding: 12px;
+    }
+}

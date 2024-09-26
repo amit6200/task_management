@@ -1,0 +1,99 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h2 {
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: auto;
+    padding-top:10px;
+    margin-inline-start:0px;
+    margin-inline-end:0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+ul {
+    list-style-type: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+ul li {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+ul li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+ul li strong {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #4285f4;
+    padding: 10px 20px;
+    background-color: #f4f6f9;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul li a:hover {
+    background-color: #4285f4;
+    color: white;
+    
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    margin: 2px;
+    padding: 12px 30px;
+    background-color: #4285f4;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #357ae8;
+    
+}
+
+a.logout {
+    background-color: #d9534f;
+}
+
+a.logout:hover {
+    background-color: #c9302c;
+}
+

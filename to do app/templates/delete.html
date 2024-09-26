@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Task</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/delete.css') }}">
+</head>
+<body>
+
+<div class="delete-task-container">
+    <h2>Delete Task</h2>
+
+    <!-- Display task details to confirm deletion -->
+    <p>Are you sure you want to delete the task "<strong>{{ task['title'] }}</strong>"?</p>
+    <p>Description: {{ task['description'] }}</p>
+
+    <!-- Confirmation form to delete the task -->
+    <form action="{{ url_for('delete_task', id=task.id) }}" method="POST">
+        <button type="submit" class="confirm-btn">Yes, Delete Task</button>
+        <a href="{{ url_for('dashboard') }}" class="cancel-btn">Cancel</a>
+    </form>
+</div>
+
+</body>
+</html>
